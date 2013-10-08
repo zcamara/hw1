@@ -6,15 +6,47 @@
 @import url(reset.css);
 
 body {
-    background-image: url(../img/texture-light.png);
-    background-repeat: repeat;
+    background-image: url(../img/pizza1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     padding: 10px;
+    background-color: #000;
 }
 
 .logo {
 	height: 200px;
 	width: 300px;
 	float : left;
+}
+
+header {
+	width: 390px;
+	height: 200px;
+	border: 5px solid #000;
+	background-color: #9A73D1;
+	box-shadow: 1px 1px 1px #000;
+}
+
+nav ul {
+	background-color: #9A61D2;
+	font-weight: bold;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+li {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+li a, a:link {
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #000;
+	color: #FFF;
+	border-radius: 5px;
 }

@@ -45,6 +45,7 @@ h1 {
 	color: #FFEC00;
 	padding-bottom: 10px;
 	text-shadow: 1px 1px 2px #000, 0 0 1em #9865CD, 0 0 0.2em #9865CD;
+	border-bottom: solid thin #C0C0C0;
 }
 
 dt {
@@ -57,7 +58,10 @@ dd {
 }
 
 p {
-	margin-top: 1em;
+	margin-bottom: 1em;
+	text-indent: 5%;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 h3 {

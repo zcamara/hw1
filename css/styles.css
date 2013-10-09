@@ -1,12 +1,23 @@
 /* Google web fonts 'Open Sans' (italic and normal) and 'Boogaloo' */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700);
-@import url(http://fonts.googleapis.com/css?family=Boogaloo);
+@import url(http://fonts.googleapis.com/css?family=Sancreek);
 
 /* reset CSS file to reset browser default styling to a consistent starting point */
 @import url(reset.css);
 
+#homePage {
+	background-image: url(../img/pizza1.jpg);
+}
+
+#pizzamenu {
+	 background-image: url(../img/pizza-order.jpg);
+}
+
+#aboutpage {
+	 background-image: url(../img/pizza-oven.jpg);
+}
+
 body {
-    background-image: url(../img/pizza1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
@@ -15,38 +26,136 @@ body {
     background-color: #000;
 }
 
+
+ 
+
+h1 {
+	font-size: 175%;
+	font-family: 'Sancreek';
+	font-weight: bold;
+	color: #FFEC00;
+	margin: 10px;
+	text-shadow: 1px 1px 2px #000, 0 0 1em purple, 0 0 0.2em purple;
+}
+
+ h2 {
+	font-size: 225%;
+	font-family: 'Sancreek';
+	font-weight: bold;
+	color: #FFEC00;
+	padding-bottom: 10px;
+	text-shadow: 1px 1px 2px #000, 0 0 1em #9865CD, 0 0 0.2em #9865CD;
+}
+
+dt {
+	margin-bottom: 1em;
+}
+
+dd {
+	font-style: italic;
+	margin-bottom: 1em;
+}
+
+p {
+	margin-top: 1em;
+}
+
+h3 {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 130%;
+	font-weight: bold;
+}
+
+h4 {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 110%;
+	font-weight: bold;
+}
+
 .logo {
-	height: 200px;
-	width: 300px;
+	background-image: url(../img/logo.png);
+	height: 205px;
+	width: 280px;
 	float : left;
+	outline: none;
+	border:none;
 }
 
 header {
 	width: 390px;
-	height: 200px;
 	border: 5px solid #000;
-	background-color: #9A73D1;
+	background-color: #9865CD;
 	box-shadow: 1px 1px 1px #000;
+	overflow: auto;
+	text-align: right;
 }
 
 nav ul {
 	background-color: #9A61D2;
 	font-weight: bold;
-	border-radius: 5px;
 	margin: 5px;
 }
 
 li {
-	padding-top: 1em;
 	padding-bottom: 1em;
 }
 
-li a, a:link {
+nav li a, nav li a:link {
 	text-decoration: none;
+	color: #FFEC00;
+	border: 1px solid #9A61D2;
 }
 
-li a:hover {
-	background-color: #000;
-	color: #FFF;
+article {
+	background-image: url(../img/subtle_white_feathers.png);
+	width: 60%;
+	border: solid 5px #000;
+	float: right;
+	margin-top: 50px;
+	padding: 5px;
+}
+
+article li a, article li a:link {
+	text-decoration: none;
+	color: #000;
+}
+
+footer {
+	border-top: solid thin #C0C0C0;
+}
+
+nav li a:hover {
+	background-color: #FFEC00;
+	color: #9A61D2;
 	border-radius: 5px;
+	padding: 5px;
+}
+
+footer li {
+	font-size: 80%;
+	font-style: italic;
+	display: inline;
+	padding-right: 50px;
+}
+
+article li {
+	margin-left: 30px;
+	list-style-type: disc;
+}
+
+.menu dd {
+	margin-left: 30px;
+}
+
+.pizzainfo {
+	font-weight: bold;
+	border: 1px solid #9A61D2;
+	padding: 5px;
+	margin-bottom: 1em;
+}
+
+article li a:hover {
+	text-decoration: underline;
 }
